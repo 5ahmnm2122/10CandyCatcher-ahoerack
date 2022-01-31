@@ -20,7 +20,7 @@ public class CandySpawner : MonoBehaviour
     {
         int randomFood = Random.Range(0, candyPrefab.Length);
         GameObject a = Instantiate(candyPrefab[randomFood]) as GameObject;
-        a.transform.position = new Vector2(Random.Range(-8, 8), 8);
+        a.transform.position = new Vector2(Random.Range(-6, 6), 6);
     }
 
     IEnumerator CandyShower()
